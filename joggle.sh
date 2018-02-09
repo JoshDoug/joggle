@@ -5,7 +5,7 @@
 if type -p java && [[ -x $JAVA_HOME ]]; then
   echo "Java found on system and JAVA_HOME is set"
 else
-  echo "Java not found on PATH or JAVA_HOME not set, exiting..."
+  echo "Java not found on PATH or JAVA_HOME not set, will try setting JAVA_HOME anyway..."
 fi
 
 java8=`/usr/libexec/java_home -v '1/8*'`
