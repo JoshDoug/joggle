@@ -7,16 +7,16 @@ if [[ "$java_path" ]] && [[ -x $JAVA_HOME ]]; then
   echo "Java found on system and JAVA_HOME is set"
 else
   echo "Java not found on PATH or JAVA_HOME not set"
-  echo "Defaulting to Java 9 when attempting to set JAVA_HOME"
+  echo "Defaulting to Java 10 when attempting to set JAVA_HOME"
 fi
 
 java8=`/usr/libexec/java_home -v '1/8*'`
-java9=`/usr/libexec/java_home -v '10*'`
+java10=`/usr/libexec/java_home -v '10*'`
 
-if [ "$java9" == "$JAVA_HOME" ]; then
+if [ "$java10" == "$JAVA_HOME" ]; then
   export JAVA_HOME=$java8
   java -version
 else
-  export JAVA_HOME=$java9
+  export JAVA_HOME=$java10
   java -version
 fi
