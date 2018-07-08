@@ -11,7 +11,7 @@ else
 fi
 
 java8=`/usr/libexec/java_home -v '1/8*'`
-java9=`/usr/libexec/java_home -v '9*'`
+java9=`/usr/libexec/java_home -v '10*'`
 
 if [ "$java9" == "$JAVA_HOME" ]; then
   export JAVA_HOME=$java8
