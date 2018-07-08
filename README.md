@@ -1,6 +1,6 @@
 # joggle
-Toggle between the latest installed versions of Java 8 and 9 on macOS.
-This is a 5 minute janky script made to deal with the annoyance of switching Java versions on macOS, which is regularly necessary with all the *current* Java 9 incompatibilties. Use at your own risk.
+Toggle between the latest installed versions of Java 8 and 10 on macOS.
+This is a 5 minute janky script made to deal with the annoyance of switching Java versions on macOS, which is regularly necessary with all the *current* Java 10 incompatibilties. Use at your own risk.
 
 * `chmod +x` script to make it executable
 * Add script to `$PATH` or add to a directory in `$PATH`.
